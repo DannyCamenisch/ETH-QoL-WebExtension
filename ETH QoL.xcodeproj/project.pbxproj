@@ -22,9 +22,6 @@
 		6FF51DB528FEE9CC00E96F77 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 6FF51DB428FEE9CC00E96F77 /* manifest.json */; };
 		6FF51DB728FEE9CC00E96F77 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FF51DB628FEE9CC00E96F77 /* background.js */; };
 		6FF51DB928FEE9CC00E96F77 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FF51DB828FEE9CC00E96F77 /* content.js */; };
-		6FF51DBB28FEE9CC00E96F77 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 6FF51DBA28FEE9CC00E96F77 /* popup.html */; };
-		6FF51DBD28FEE9CC00E96F77 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 6FF51DBC28FEE9CC00E96F77 /* popup.css */; };
-		6FF51DBF28FEE9CC00E96F77 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FF51DBE28FEE9CC00E96F77 /* popup.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,9 +67,6 @@
 		6FF51DB428FEE9CC00E96F77 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
 		6FF51DB628FEE9CC00E96F77 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
 		6FF51DB828FEE9CC00E96F77 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
-		6FF51DBA28FEE9CC00E96F77 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
-		6FF51DBC28FEE9CC00E96F77 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
-		6FF51DBE28FEE9CC00E96F77 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
 		6FF51DC028FEE9CC00E96F77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FF51DC128FEE9CC00E96F77 /* ETH_QoL_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ETH_QoL_Extension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,9 +151,6 @@
 				6FF51DB428FEE9CC00E96F77 /* manifest.json */,
 				6FF51DB628FEE9CC00E96F77 /* background.js */,
 				6FF51DB828FEE9CC00E96F77 /* content.js */,
-				6FF51DBA28FEE9CC00E96F77 /* popup.html */,
-				6FF51DBC28FEE9CC00E96F77 /* popup.css */,
-				6FF51DBE28FEE9CC00E96F77 /* popup.js */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -259,13 +250,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FF51DB728FEE9CC00E96F77 /* background.js in Resources */,
-				6FF51DBD28FEE9CC00E96F77 /* popup.css in Resources */,
-				6FF51DBB28FEE9CC00E96F77 /* popup.html in Resources */,
 				6FF51DB328FEE9CC00E96F77 /* images in Resources */,
 				6FF51DB528FEE9CC00E96F77 /* manifest.json in Resources */,
 				6FF51DB128FEE9CC00E96F77 /* _locales in Resources */,
 				6FF51DB928FEE9CC00E96F77 /* content.js in Resources */,
-				6FF51DBF28FEE9CC00E96F77 /* popup.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +488,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "ETH QoL/ETH QoL.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -508,6 +497,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "ETH QoL";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -536,6 +526,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "ETH QoL/ETH QoL.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -544,6 +535,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "ETH QoL";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
