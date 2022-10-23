@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F0D35A8290598200049DCEF /* video.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F0D35A62905981D0049DCEF /* video.js */; };
 		6FF51D9028FEE9CB00E96F77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF51D8F28FEE9CB00E96F77 /* AppDelegate.swift */; };
 		6FF51D9428FEE9CB00E96F77 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 6FF51D9228FEE9CB00E96F77 /* Main.html */; };
 		6FF51D9628FEE9CB00E96F77 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF51D9528FEE9CB00E96F77 /* Icon.png */; };
@@ -21,7 +22,7 @@
 		6FF51DB328FEE9CC00E96F77 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 6FF51DB228FEE9CC00E96F77 /* images */; };
 		6FF51DB528FEE9CC00E96F77 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 6FF51DB428FEE9CC00E96F77 /* manifest.json */; };
 		6FF51DB728FEE9CC00E96F77 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FF51DB628FEE9CC00E96F77 /* background.js */; };
-		6FF51DB928FEE9CC00E96F77 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FF51DB828FEE9CC00E96F77 /* content.js */; };
+		6FF51DB928FEE9CC00E96F77 /* login.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FF51DB828FEE9CC00E96F77 /* login.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6F0D35A62905981D0049DCEF /* video.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = video.js; sourceTree = "<group>"; };
 		6FF51D8C28FEE9CB00E96F77 /* ETH QoL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ETH QoL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF51D8F28FEE9CB00E96F77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FF51D9328FEE9CB00E96F77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
@@ -66,7 +68,7 @@
 		6FF51DB228FEE9CC00E96F77 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 		6FF51DB428FEE9CC00E96F77 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
 		6FF51DB628FEE9CC00E96F77 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
-		6FF51DB828FEE9CC00E96F77 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		6FF51DB828FEE9CC00E96F77 /* login.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = login.js; sourceTree = "<group>"; };
 		6FF51DC028FEE9CC00E96F77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FF51DC128FEE9CC00E96F77 /* ETH_QoL_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ETH_QoL_Extension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,7 +152,8 @@
 				6FF51DB228FEE9CC00E96F77 /* images */,
 				6FF51DB428FEE9CC00E96F77 /* manifest.json */,
 				6FF51DB628FEE9CC00E96F77 /* background.js */,
-				6FF51DB828FEE9CC00E96F77 /* content.js */,
+				6FF51DB828FEE9CC00E96F77 /* login.js */,
+				6F0D35A62905981D0049DCEF /* video.js */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -249,11 +252,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F0D35A8290598200049DCEF /* video.js in Resources */,
 				6FF51DB728FEE9CC00E96F77 /* background.js in Resources */,
 				6FF51DB328FEE9CC00E96F77 /* images in Resources */,
 				6FF51DB528FEE9CC00E96F77 /* manifest.json in Resources */,
 				6FF51DB128FEE9CC00E96F77 /* _locales in Resources */,
-				6FF51DB928FEE9CC00E96F77 /* content.js in Resources */,
+				6FF51DB928FEE9CC00E96F77 /* login.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +442,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -469,7 +473,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -506,7 +510,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -544,7 +548,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
