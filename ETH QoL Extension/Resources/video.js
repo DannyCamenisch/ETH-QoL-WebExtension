@@ -1,13 +1,14 @@
-window.onload = function () {
-
+window.addEventListener('load', (event) => {
+	
 	function sleep(ms) {
 		return new Promise(resolve => setTimeout(resolve, ms));
 	}
-
+	
 	async function demo() {
 		console.log("[ETH QoL] loaded");
-		await sleep(500);
-	
+		// give the page some time to completely load
+		await sleep(300);
+		
 		// replace video player
 		if (location.href.includes("https://video.ethz.ch/lectures/")) {
 			try {
@@ -35,4 +36,4 @@ window.onload = function () {
 	}
 
 	demo();
-}
+});

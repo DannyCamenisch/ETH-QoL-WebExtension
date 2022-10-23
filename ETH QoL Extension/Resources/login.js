@@ -1,12 +1,7 @@
-window.onload = function () {
-
-	function sleep(ms) {
-		return new Promise(resolve => setTimeout(resolve, ms));
-	}
+window.addEventListener('load', (event) => {
 
 	async function demo() {
 		console.log("[ETH QoL] loaded");
-		await sleep(500);
 		
 		// stop execution if there is a quiz, exam or something similar
 		if (location.href.includes("quiz") || location.href.includes("feedback") || location.href.includes("test") || location.href.includes("exam") || location.href.includes("prüfung")) return;
@@ -31,4 +26,4 @@ window.onload = function () {
 	}
 
 	demo();
-}
+});
